@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <title>ACICE - Basket</title>
+</head>
+<body>
+    <header class="lobster-regular">
+        <nav class="disp-flex-between">
+            <a href="./index.html" class="logo">
+                AcIce 
+                <i class="fa-solid fa-ice-cream"></i>
+            </a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./detail.html">Services</a></li>
+                <li><a href="./detail.html">Contact</a></li>
+            </ul>
+            <a href="./basket.html" class="basket">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="basket" class="disp-flex-between">            
+            <div class="basket-items">
+                <div class="basket-item disp-flex-between">
+                        <img src="./assets/images/comb1.jpeg" alt="Product" />
+                    <div class="item-details disp-flex-between">
+                        <h2>Strawberry, Kiwi, and Orange Mix</h2>
+                        <p>500g x 3 packs</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <span>3</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <p class="price">$15</p>
+                        <button class="remove">Remove</button>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="basket-summary disp-flex-between">
+                <div>
+                <h2>Summary</h2>
+                <p>Total Items: 3</p>
+                <p>Total Price: $15</p>
+            </div>
+                <div class="basket-actions">
+                    <button>Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="disp-flex-around footer-socials">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div>
+            <nav class="disp-flex-between lobster-regular">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./detail.html">Services</a></li>
+                <li><a href="./detail.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="footer-border">
+            <p>&copy; Copyright 2024 -  <a href="#" class="logo lobster-regular">
+                AcIce
+            </a></p>
+        </div>
+    </footer>
+</body>
+</html>
