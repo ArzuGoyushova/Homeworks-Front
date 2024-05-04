@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0 auto;
+}
+th, td{
+    padding: 12px 16px;
+}
+.myTable {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.myTable th {
+    background-color: #f3ac72; 
+    color: white;
+}
+
+.myTable tr {
+    background-color: #fdfdfd; 
+    transition: background-color 0.3s ease;
+}
+
+.myTable img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+.myTable img:hover {
+    transform: scale(1.4);
+}
+
+.myTable tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+.myTable tr:hover {
+    background-color: #e76f51;
+}
+.myTable tr:nth-child(even):hover {
+    background-color: #d6d4d4; 
+}

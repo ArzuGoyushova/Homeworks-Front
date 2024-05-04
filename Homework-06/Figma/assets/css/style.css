@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.logo2{
+    margin-left:-10px;
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    padding: 10px 0;
+    background-color: white;
+}
+nav{
+    display: flex;
+    gap: 1rem;
+}
+.navlink{
+    color:black;
+}
+#hero{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px;
+    display: flex;
+    align-items: flex-end;
+}
+#hero h1{
+    margin-bottom: 40px;
+    color:#AEE8FB;
+    font-size: 8rem;
+}
+
+#discover{
+    margin: 120px 0;
+}
+
+.discover-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.discover-txt{
+    max-width: 895px;
+    width: 100%;
+    font-size: 44px;
+    text-align: center;
+}
+.btn{
+    color:black;
+    padding: 8px 12px;
+    border:1px solid black;
+    font-size:14px;
+    border-radius: 10px;
+}
+
+#provide{
+    background-color: #F3E9E2;
+    max-height: 392px;
+    padding: 60px;
+}
+#provide h1{
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 400;
+}
+
+#our-programs{
+    margin:120px 0;
+    padding: 0 20px;
+}
+#our-programs .our-programs-title{
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.our-programs-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-programs-cards-card{
+    width: 30%;
+    display: grid;
+    place-items: center;
+    background-color: #AEE8FB;
+    height:600px;
+    padding: 16px;
+    border-radius: 12px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.card-info p{
+    text-align: center;
+}
+.our-programs-cards-card:nth-child(2){
+    background-color: #F3E9E2;
+}
+
+#paycheck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:140px 0;
+}
+.paycheck-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 570px;
+}
+.paycheck-left, .paycheck-right{
+    width: 48%;
+    overflow: hidden;
+    height:100%;
+}
+.paycheck-left img{
+    width: 100%;
+}
+.paycheck-right{
+    height: 100%;
+    background-color: #F3E9E2;
+    display: grid;
+    place-items: center;
+    padding: 60px;
+    border-radius: 20px;
+}
+.paycheck-right h3{
+    font-size: 44px;
+    font-weight: 400;
+}
+.numbers-box{    
+    margin: 120px 0;
+}
+.number-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.number-card h3{
+    font-size: 62px;
+    font-weight: 400;
+}
+.number-line{
+    height: 120px;
+    width: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.number-card{
+    display: grid;
+    place-items: center;
+    padding: 0 132px;
+}
+.numbers-title{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#moving-ad{    
+    background-color: #F3E9E2;
+    height:208px;
+    display: grid;
+    place-items: center;
+    margin:120px 0;
+}
+#moving-ad h1{
+    font-size: 80px;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+#free-resources{
+    margin:120px 0;
+}
+.free-resources-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    margin-top:40px;
+}
+.free-resources-card{
+    padding: 16px;
+    background-color: #AEE8FB;
+    border-radius: 10px;
+    width: calc(100%/3);
+    height:50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.free-resources-card h1{
+    font-size: 58px;
+    font-weight: 400;
+}
+.free-resources-card a{
+    align-self: flex-end;
+}
+
+.free-resources-card:nth-child(2){
+    background-color: #F3E9E2;
+    color: #FF3B41;
+}
+
+.free-resources-card:nth-child(3){
+    background-color:#FF3B41;
+    color:#F3E9E2;
+}
+.free-resources-card:nth-child(2) .btn{
+    color: #FF3B41;
+    border:1px solid #FF3B41;
+}
+.free-resources-card:nth-child(3) .btn{
+    color:#F3E9E2;
+    border: 1px solid #F3E9E2;
+}
+
+#feedbacks{
+    background-color: #F3E9E2;
+    max-height: 525px;
+    padding: 60px;
+}
+#feedbacks p{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.feedbacks-box{
+    margin:0 auto;
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+}
+.feedbacks-comment{
+    display: grid;
+    place-items: center;
+    gap:12px;
+}
+.feedbacks-comment h1{
+    font-size: 44px;
+    font-weight: 400;
+    text-align: center;
+}
+.feedbacks-slide-icons i{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.feedbacks-slide-icons i:nth-child(1){
+    font-size: 8px;
+}
+#footer-banner img{
+    width: 100%;
+}
