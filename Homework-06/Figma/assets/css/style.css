@@ -5,9 +5,7 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
-body{
-    overflow-x: hidden;
-}
+
 .container{
     max-width: 1250px;
     width: 100%;
@@ -32,6 +30,9 @@ nav{
 }
 .navlink{
     color:black;
+}
+.navlink:hover{
+    color:#FF3B41;
 }
 #hero{
     background-image: url(../images/banner.png);
@@ -71,7 +72,10 @@ nav{
     font-size:14px;
     border-radius: 10px;
 }
-
+.btn:hover{
+    background-color: black;
+    color:white;
+}
 #provide{
     background-color: #F3E9E2;
     max-height: 392px;
@@ -275,4 +279,43 @@ nav{
 }
 #footer-banner img{
     width: 100%;
+}
+#transformation{
+    padding: 80px;
+}
+.transformation-box{
+    margin:0 auto;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap:40px;
+}
+#transformation h1{
+    font-weight: 400;
+    font-size: 80px;
+}
+#transformation h3{
+    font-weight: 400;
+    font-size: 44px;
+}
+footer{
+    background-color: #F3E9E2;
+}
+.footer-box{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-right{
+    display: grid;
+    gap:48px;
+}
+.footer-right ul{
+    list-style-type: none;
+    font-size: 15px;
+}
+.footer-right p:last-child{
+    margin:60px 0 0 120px;
+    font-size: 13px;
 }
