@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="forms-box">
+        <div class="travel-form">
+            <h1>Travel reservation form</h1>
+            <h3>* denotes mandotory</h3>
+            <form action="">
+                <label for="fullname">Full Name*:</label> <br>
+                <input type="text" id="fullname" name="fullname" required placeholder="FirstName LastName"/> <br>
+                <label for="email">Email Address*:</label> <br>
+                <input type="email" id="email" name="email" required placeholder="Email Address"/> <br>
+                <label for="package">Select Tour Package*:</label> <br>
+                <select name="package" id="package">
+                    <option value="goa">Goa</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                </select> <br>
+                <label for="date">Arrival Date*:</label> <br>
+                <input type="datetime" name="date" id="date" placeholder="m/d/y" required/> <br>
+                <label for="persons">Number Of Persons*:</label> <br>
+                <input type="number" id="persons" name="persons" required placeholder="UNKNOWN_TYPE"/> <br>
+                <label>What would you want to avail?*:</label> <br>
+                <input type="checkbox" name="avail" id="boarding"/> <label for="boarding">Boarding</label> <br>
+                <input type="checkbox" name="avail" id="fooding"/> <label for="fooding">Fooding</label> <br>
+                <input type="checkbox" name="avail" id="seeing"/> <label for="seeing">Sight seeing</label> <br>
+                <label for="coupon">Discount coupon code:</label> <br>
+                <input type="text" id="coupon" name="coupon" placeholder="UNKNOWN_TYPE"/> <br>
+                <label>Terms and conditions*:</label> <br>
+                <input type="radio" id="agree" name="agree" required/> <label for="agree">Agree</label> 
+                <input type="radio" id="disagree" name="agree" required/> <label for="disagree">Disagree</label> <br>
+                <button type="submit">Complete reservation</button>
+            </form>
+        </div>
+        <div class="example-form">
+            <form action="">
+                <table class="formTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>Control Type</th>
+                            <th>Data</th>
+                            <th>Control</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Text box</td>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Enter name" /></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" name="password"/></td>
+                        </tr>
+                        <tr>
+                            <td>Text Area</td>
+                            <td><label for="address">Address:</label></td>
+                            <td><textarea name="address" id="address" cols="20" rows="5" placeholder="Enter Address"></textarea> </td>
+                        </tr>
+                        <tr>
+                            <td>Drop down list</td>
+                            <td><label for="area">Area:</label></td>
+                            <td>
+                                <select name="area" id="area">
+                                    <option value="center">Center</option>
+                                    <option value="cityside">City Side</option>
+                                    <option value="countryside">Country Side</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Check Box</td>
+                            <td><label for="hobby">Hobbies:</label></td>
+                            <td>
+                                <input type="checkbox" name="hobby" id="sport"/> <label for="sport">Sport</label> <br> 
+                                <input type="checkbox" name="hobby" id="reading"/> <label for="reading">Reading</label> <br>
+                                <input type="checkbox" name="hobby" id="tv"/> <label for="tv">TV</label> <br>
+                                <input type="checkbox" name="hobby" id="internet"/> <label for="internet">Internet</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Radio Buttons</td>
+                            <td><label for="gender">Gender:</label></td>
+                            <td>
+                                <fieldset>
+                                    <legend>Gender selection:</legend>
+                                <input type="radio" name="gender" id="male"/> <label for="male">Male</label> <br>
+                                <input type="radio" name="gender" id="female"/> <label for="female">Female</label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>File Upload</td>
+                            <td><label for="file">Your Image:</label></td>
+                            <td>
+                                <input type="file" name="profilePicture" id="file"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Buttons</td>
+                            <td><label for="action">Actions:</label></td>
+                            <td>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                                <button type="button">Button</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

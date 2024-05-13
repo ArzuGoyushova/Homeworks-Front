@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.travel-form h3{
+    margin:16px 0;
+}
+.travel-form input, .travel-form button{
+    margin:4px 0;
+}
+.forms-box{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.formTable{
+    border-collapse: collapse;
+}
+
+.formTable td, th{
+    padding: 8px;
+}
+.formTable legend{
+    padding: 8px;
+}
+.formTable input[type="radio" i]{
+    margin:0 8px 8px 12px;
+}
+.formTable button{
+    padding: 0 4px;
+    margin-right:8px;
+}
