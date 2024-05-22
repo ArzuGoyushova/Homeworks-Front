@@ -1,0 +1,77 @@
+@use "../utilites/variables" as *;
+@use "../utilites/responsive" as *;
+
+.header {
+  background-color: $color-tintblue;
+  padding: 16px 0;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet() {
+    }
+
+    &__links {
+      display: flex;
+      list-style-type: none;
+      gap: 32px;
+      color: #bbbbcb;
+
+      @include tablet() {
+        // display: none;
+        position: fixed;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        right: -100%;
+        height: 100%;
+        z-index: 3;
+        box-shadow: -2px 1px 20px 0px rgba(0, 0, 0, 0.3);
+        background-color: $color-tintblue;
+        width: 30%;
+        padding: 64px 16px 16px 16px;
+        flex-direction: column;
+
+        &.open {
+          right: 0;
+        }
+      }
+      @include mobile {
+        padding: 64px 16px 16px 24px;
+        width: 70%;
+      }
+      font-size: 16px;
+      font-weight: 500;
+      .active {
+        color: white;
+      }
+    }
+  }
+
+  .btn {
+    @include laptop() {
+      display: none;
+    }
+  }
+  .btn-menu {
+    background: none;
+    display: none;
+    border: 0;
+    color: white;
+    // size: 32px;
+    @include tablet() {
+      display: block;
+    }
+    cursor: pointer;
+    width: 32px;
+    position: relative;
+    z-index: 5;
+    height: 32px;
+    i {
+      font-size: 24px;
+    }
+  }
+  &-logo {
+  }
+}

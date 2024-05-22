@@ -1,0 +1,90 @@
+@use "../utilites/variables" as *;
+@use "../utilites/mixins" as *;
+@use "../utilites/responsive" as *;
+
+
+.projects{
+    padding: 120px 0;
+
+    &-inner{
+        &__title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                @include text(48px,$color-darkblue, 600, 64px);
+            }
+            a{
+                display: flex;
+                gap:12px;
+                color:$color-darkblue;
+                align-items: center;
+            }
+        }
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1 fr);
+            gap:16px;
+
+            h2{
+                @include text(24px, $color-white, 600, 36px);
+            }
+            p{
+                @include text(16px, $color-white, 400, 28px);
+                opacity: 0.7;
+            }
+            a{
+                display: flex;
+                gap:12px;
+                color:$color-yellow;
+                align-items: center;
+                margin-block: 24px;
+                text-align: start;
+            }
+        }
+        &__content{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transform: translateX(-100px);
+            transition: all ease-in-out 0.5s;
+            opacity: 0;
+        }
+        &__card:hover &__content{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        &__card:nth-child(1){
+            grid-area: 1/1/3/3;
+            position: relative;
+            
+            .projects-inner__content{
+                width: 50%;
+                gap:16px;
+            }
+        }
+       
+        &__card:nth-child(2){
+            grid-area: 1/3/span 1/span 1;
+            position: relative;
+            .projects-inner__content{
+                width: 100%;
+            }
+        }
+        &__card:nth-child(3){
+            grid-area: 2/3/span 1/span 1;
+            position: relative;
+            .projects-inner__content{
+                width: 100%;
+            }
+        }
+
+    }
+}

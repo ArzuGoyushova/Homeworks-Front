@@ -1,0 +1,19 @@
+// Utilities
+@use "./utilites/variables";
+
+@use "./utilites/reset";
+
+@use "./utilites/container";
+@use "./utilites/mixins";
+
+//ui
+
+@use "./ui/btn";
+
+//block
+
+@use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/work";
+@use "./blocks/projects";
+@use "./blocks/features";

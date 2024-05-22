@@ -1,0 +1,25 @@
+@use "../utilites/variables" as *;
+@use "../utilites/responsive" as *;
+
+.btn {
+  padding: 16px 48px;
+  border: 2px solid rgba($color-grey, 0.2);
+  border-radius: 40px;
+  color: $color-white;
+
+  &.btn-yellow {
+    background-color: $color-yellow;
+    color: $color-textblack;
+    font-weight: 600;
+    font-size: 18px;
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+  &.btn-large {
+    @include laptop {
+      padding: 16px 32px;
+    }
+    padding: 16px 56px;
+  }
+}

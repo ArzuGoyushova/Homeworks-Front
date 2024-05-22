@@ -1,0 +1,70 @@
+@use "../utilites/variables" as *;
+@use "../utilites/mixins" as *;
+@use "../utilites/responsive" as *;
+
+%flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.work {
+    padding: 120px 0;
+    background-color: $color-grey;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+       
+        &__left {
+            width: 30%;
+            @extend %flexCol;
+
+            h2 {
+                @include text(48px, $color-darkblue, 600);
+            }
+
+            p {
+                @include text($color: $color-darkblue, $lh: 32px);
+                opacity: 0.7;
+            }
+
+            a {
+                margin: 16px 0;
+                display: inline-block;
+                @include text(16px, $color-royalblue, 600);
+            }
+        }
+
+        &__right {
+            width: 50%;
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            line-height: 32px;
+            margin-bottom: 16px;
+
+            img {
+                width: 16%;
+            }
+
+            h2 {
+                @include text(32px, $color-darkblue, 500, 32px);
+            }
+
+            p {
+                @include text($color: $color-darkblue);
+                opacity: 0.7;
+                padding-right: 16px;
+            }
+        }
+    }
+}

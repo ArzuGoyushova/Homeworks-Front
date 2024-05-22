@@ -1,0 +1,80 @@
+@use "../utilites/variables" as *;
+@use "../utilites/mixins" as *;
+@use "../utilites/responsive" as *;
+
+.hero {
+  background: $color-tintblue;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 120px;
+    align-items: center;
+    @include laptop {
+      padding-block: 48px;
+    }
+    @include tablet {
+      flex-direction: column-reverse;
+      padding-block: 48px;
+    }
+  }
+  &-left {
+    width: 40%;
+    h1 {
+      @include text(54px, $color-white, 600);
+      margin-bottom: 24px;
+      line-height: 74px;
+      @include laptop {
+        @include text(36px, $color-white, 600, normal);
+      }
+    }
+    p {
+      @include text();
+      margin-bottom: 48px;
+      opacity: 0.7;
+      line-height: 28px;
+      @include laptop {
+        @include text(14px, $color-white, 400, 28px);
+      }
+    }
+  }
+  &-right {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-actions {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    .arrow-text {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      color: white;
+    }
+  }
+}
+
+@include tablet {
+  .hero-left {
+    width: 100%;
+  }
+  .hero-right {
+    margin-bottom: 50px;
+    width: 50%;
+  }
+}
+@include mobile {
+  .hero-left {
+    width: 100%;
+  }
+  .hero-right {
+    margin-bottom: 50px;
+    width: 70%;
+  }
+}
